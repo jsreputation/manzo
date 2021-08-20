@@ -3,8 +3,19 @@ import { RouterModule, Routes } from '@angular/router';
 
 const routes: Routes = [
   {
-    path: 'home',
-    // loadChildren()
+    path: 'onboarding',
+    loadChildren: () => import('./pages/onborading/onborading.module').then(m => m.OnboradingModule)
+  },
+  {
+    path: 'auth',
+    loadChildren: () => import('./pages/auth/auth.module').then(m => m.AuthModule)
+  },
+  {
+    path: '',
+    redirectTo: 'onboarding'
+  },
+  {
+    path: '**', redirectTo: 'onboarding'
   }
 ];
 
