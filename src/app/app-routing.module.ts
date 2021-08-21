@@ -1,10 +1,10 @@
 import { NgModule } from '@angular/core';
-import { RouterModule, Routes } from '@angular/router';
+import { RouterModule, Routes, RoutesRecognized } from '@angular/router';
 
 const routes: Routes = [
   {
-    path: 'onboarding',
-    loadChildren: () => import('./pages/onborading/onborading.module').then(m => m.OnboradingModule)
+    path: '',
+    loadChildren: () => import('./pages/onboarding/layout.module').then(m => m.LayoutModule)
   },
   {
     path: 'auth',
@@ -12,10 +12,11 @@ const routes: Routes = [
   },
   {
     path: '',
-    redirectTo: 'onboarding'
+    redirectTo: 'home',
+    pathMatch: 'full'
   },
   {
-    path: '**', redirectTo: 'onboarding'
+    path: '**', redirectTo: 'home', pathMatch: 'full'
   }
 ];
 
