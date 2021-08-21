@@ -6,7 +6,21 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./header.component.scss']
 })
 export class HeaderComponent implements OnInit {
+  menus = [
+    {
+      name: 'Home',
+      route: '/home'
+    },
+    {
+      name: 'Contact Us',
+      route: '/contact'
+    },
+    {
+      name: 'About Us',
+      route: '/about'
+    },
 
+  ]
   constructor() { }
 
   ngOnInit(): void {

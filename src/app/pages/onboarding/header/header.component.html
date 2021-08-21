@@ -2,10 +2,10 @@
     <a href="#" class="navbar-brand">
         <img src="../../../../assets/images/directprivateoffers-logo-bd.png" alt="">
     </a>
-    <div class="collapse navbar-collapse">
-        <ul class="navbar-nav mr-auto">
-            <li>
-                <a href="">Home</a>
+    <div class="navbar-collapse">
+        <ul class="navbar-nav">
+            <li *ngFor="let item of menus">
+                <a class="font-20" [routerLink]="item.route" routerLinkActive="text-primary">{{ item.name }}</a>
             </li>
         </ul>
     </div>

@@ -5,6 +5,8 @@ import { HeaderComponent } from './header/header.component';
 import { FooterComponent } from './footer/footer.component';
 import { LayoutComponent } from './layout.component';
 import { LayoutRoutingModule } from './layout-routing.module';
+import { ContactComponent } from './contact/contact.component';
+import { AboutComponent } from './about/about.component';
 
 
 
@@ -13,7 +15,7 @@ import { LayoutRoutingModule } from './layout-routing.module';
     OnboardingComponent, 
     HeaderComponent, 
     FooterComponent, 
-    LayoutComponent
+    LayoutComponent, ContactComponent, AboutComponent
   ],
   imports: [
     CommonModule,
