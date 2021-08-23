@@ -3,7 +3,7 @@ import { RouterModule, Routes, RoutesRecognized } from '@angular/router';
 
 const routes: Routes = [
   {
-    path: '',
+    path: 'home',
     loadChildren: () => import('./pages/onboarding/layout.module').then(m => m.LayoutModule)
   },
   {

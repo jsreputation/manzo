@@ -7,17 +7,12 @@ import { Component, OnInit } from '@angular/core';
 })
 export class OnboardingComponent implements OnInit {
 
-  issues: Array<object> = [
-    {
-      id: 'xe3544beder4',
-      logo: '',
-      description: '',
-      status: {
-        totalInvestmentNeeded: 50,
-        investedAmount: 27
-      }
-    }
-  ];
+  images = [944, 1011, 984].map((n) => `https://picsum.photos/id/${n}/900/500`);
+
+  pauseOnHover = true;
+  pauseOnFocus = true;
+
+  issues = [1,3,4];
 
   constructor() { }
 

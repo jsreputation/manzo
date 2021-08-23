@@ -1,21 +1,36 @@
-<div class="container">
+<div class="container-fluid">
+
+    <div class="row">
+        <ngb-carousel [interval]="3000" [pauseOnHover]="pauseOnHover" [pauseOnFocus]="pauseOnFocus">
+            <ng-template ngbSlide *ngFor="let img of images; index as i">
+              <div class="carousel-caption">
+                <!-- <h3>My slide {{i + 1}} title</h3> -->
+              </div>
+              <a href="https://www.google.com/?q=Number+{{i+1}}" target="_blank" rel="nofollow noopener noreferrer">
+                <div class="picsum-img-wrapper">
+                  <img [src]="img" alt="My image {{i + 1}} description">
+                </div>
+              </a>
+            </ng-template>
+        </ngb-carousel>
+    </div>
+
+    <div class="row">
+        <div class="col-md-4" *ngFor="let item of issues">
+            <div class="card" style="width: 18rem;">
+                <img src="..." class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Card title</h5>
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    <a href="#" class="btn btn-primary">Go somewhere</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
     <div class="row">
         
-    </div>
-    <!-- List of issues  -->
-    <div class="row">
-        <ng-container *ngIf="issues.length > 0">
-            <ng-template class="col-md-6" *ngFor="let item of issues">
-                <div class="card">
-                    <div class="card-header">
-                        <!-- Title and img of the issue -->
-                    </div>
-                    <div class="card-body">
-                        
-                    </div>
-                </div>
-            </ng-template>
-        </ng-container>
     </div>
 </div>
 

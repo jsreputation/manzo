@@ -6,7 +6,7 @@ import { OnboardingComponent } from './onboarding/onboarding.component';
 
 const routes: Routes = [
   {
-    path: 'home',
+    path: '',
     component: LayoutComponent,
     children: [
       {
