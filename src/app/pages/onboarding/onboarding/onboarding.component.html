@@ -1,14 +1,22 @@
 <div class="container-fluid">
-
     <div class="row">
-        <ngb-carousel [interval]="3000" [pauseOnHover]="pauseOnHover" [pauseOnFocus]="pauseOnFocus">
+        <ngb-carousel class="w-100" [interval]="3000" [pauseOnHover]="pauseOnHover" [pauseOnFocus]="pauseOnFocus">
             <ng-template ngbSlide *ngFor="let img of images; index as i">
-              <div class="carousel-caption">
-                <!-- <h3>My slide {{i + 1}} title</h3> -->
+              <div class="carousel-caption" *ngIf="i == 0">
+                <h1 class="text-success">Connecting Investors</h1>
+                <h3>To the World’s fastest-growing ventures and best investments.</h3>
               </div>
-              <a href="https://www.google.com/?q=Number+{{i+1}}" target="_blank" rel="nofollow noopener noreferrer">
+              <div class="carousel-caption" *ngIf="i == 1">
+                <h1 class="text-info">Are you the first time to be here ?</h1>
+                <button class="btn btn-success font-20">Get Started</button>
+              </div>
+              <div class="carousel-caption" *ngIf="i == 2">
+                <h1 class="text-info">Wanna have a look on how it works ?</h1>
+                <button class="btn btn-success font-20">How it works</button>
+              </div>
+              <a class="w-100" href="https://www.google.com/?q=Number+{{i+1}}" target="_blank" rel="nofollow noopener noreferrer">
                 <div class="picsum-img-wrapper">
-                  <img [src]="img" alt="My image {{i + 1}} description">
+                  <img class="w-100" [src]="img" alt="My image {{i + 1}} description">
                 </div>
               </a>
             </ng-template>
