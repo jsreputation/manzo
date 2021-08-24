@@ -7,12 +7,12 @@
                 <h3>To the World’s fastest-growing ventures and best investments.</h3>
               </div>
               <div class="carousel-caption" *ngIf="i == 1">
-                <h1 class="text-info">Are you the first time to be here ?</h1>
-                <button class="btn btn-success font-20">Get Started</button>
+                <h1 class="text-light">Are you the first time to be here ?</h1>
+                <button class="btn btn-danger btn-lg">Get Started</button>
               </div>
               <div class="carousel-caption" *ngIf="i == 2">
-                <h1 class="text-info">Wanna have a look on how it works ?</h1>
-                <button class="btn btn-success font-20">How it works</button>
+                <h1 class="text-light">Wanna have a look on how it works ?</h1>
+                <button class="btn btn-light btn-lg">How it works</button>
               </div>
               <a class="w-100" href="https://www.google.com/?q=Number+{{i+1}}" target="_blank" rel="nofollow noopener noreferrer">
                 <div class="picsum-img-wrapper">
@@ -22,25 +22,42 @@
             </ng-template>
         </ngb-carousel>
     </div>
-
-    <div class="row">
-        <div class="col-md-4" *ngFor="let item of issues">
-            <div class="card" style="width: 18rem;">
-                <img src="..." class="card-img-top" alt="...">
-                <div class="card-body">
-                    <h5 class="card-title">Card title</h5>
-                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                    <a href="#" class="btn btn-primary">Go somewhere</a>
-                </div>
-            </div>
-        </div>
-    </div>
-
-
-    <div class="row">
-        
-    </div>
 </div>
+  
+  
+  
+<!-- popular issues -->
+<div class="container">
+  <!-- options to invest or issue -->
+    
+  <div class="row mt-5">
+    <div class="col-md-4" *ngFor="let item of actions">
+      <div class="card text-center pt-5 pb-5" [class]="item.background">
+        <fa-icon [icon]="item.icon" class="m-auto text-light font-70"></fa-icon>
+        <div class="card-body text-light">
+          <h3 class="card-title">{{ item.name }}</h3>
+          <p class="card-text font-18">{{ item.description }}</p>
+          <!-- <a href="#" class="btn btn-danger">{{ item.btnLable }}</a> -->
+        </div>
+      </div>
+    </div>
+  </div>
 
 
-
+  <h3 class="mt-5 text-danger text-center">Popular Projects</h3>
+  <div class="row mt-3">
+      <div class="col-md-4 col-sm-6" *ngFor="let item of issues">
+          <div class="card text-center">
+              <img [src]="item.logo" class="card-img-top" alt="...">
+              <div class="card-body">
+                  <h5 class="card-title">{{item.title}}</h5>
+                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                  <a href="#" class="btn btn-danger">View Details</a>
+              </div>
+          </div>
+      </div>
+    </div>
+    <a routerLink="#" class="d-block text-center mt-3 font-20 text-link">View All Projects</a>
+</div>
+  
+  

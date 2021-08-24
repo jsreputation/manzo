@@ -9,7 +9,7 @@ import { ContactComponent } from './contact/contact.component';
 import { AboutComponent } from './about/about.component';
 import { NgbCarouselModule } from '@ng-bootstrap/ng-bootstrap';
 
-
+import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 
 
 @NgModule({
@@ -22,7 +22,8 @@ import { NgbCarouselModule } from '@ng-bootstrap/ng-bootstrap';
   imports: [
     CommonModule,
     LayoutRoutingModule,
-    NgbCarouselModule
+    NgbCarouselModule,
+    FontAwesomeModule
   ]
 })
 export class LayoutModule { }

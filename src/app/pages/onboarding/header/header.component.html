@@ -2,10 +2,13 @@
     <a href="#" class="navbar-brand">
         <img src="../../../../assets/images/directprivateoffers-logo-bd.png" alt="">
     </a>
-    <div class="navbar-collapse justify-content-end">
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse justify-content-end"  id="navbarNav">
         <ul class="navbar-nav">
-            <li *ngFor="let item of menus">
-                <a class="font-18 mr-2 text-success" [routerLink]="item.route" routerLinkActive="active-link">{{ item.name }}</a>
+            <li class="nav-item" *ngFor="let item of menus">
+                <a class="font-16 mr-5 text-success nav-link" [routerLink]="item.route" routerLinkActive="active-link">{{ item.name }}</a>
             </li>
         </ul>
     </div>
