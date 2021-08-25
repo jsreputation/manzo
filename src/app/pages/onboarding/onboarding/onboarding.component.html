@@ -1,4 +1,4 @@
-<div class="container-fluid">
+<!-- <div class="container-fluid">
     <div class="row">
         <ngb-carousel class="w-100" [interval]="3000" [pauseOnHover]="pauseOnHover" [pauseOnFocus]="pauseOnFocus">
             <ng-template ngbSlide *ngFor="let img of images; index as i">
@@ -22,7 +22,7 @@
             </ng-template>
         </ngb-carousel>
     </div>
-</div>
+</div> -->
   
   
   
@@ -32,8 +32,8 @@
     
   <div class="row mt-5">
     <div class="col-md-4" *ngFor="let item of actions">
-      <div class="card text-center pt-5 pb-5" [class]="item.background">
-        <fa-icon [icon]="item.icon" class="m-auto text-light font-70"></fa-icon>
+      <div class="action card text-center pt-5 pb-5" [class]="item.background">
+        <fa-icon [icon]="item.icon" class="m-icon m-auto text-light font-70"></fa-icon>
         <div class="card-body text-light">
           <h3 class="card-title">{{ item.name }}</h3>
           <p class="card-text font-18">{{ item.description }}</p>
