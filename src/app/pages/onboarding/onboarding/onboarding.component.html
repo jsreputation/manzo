@@ -1,4 +1,4 @@
-<!-- <div class="container-fluid">
+<div class="container-fluid">
     <div class="row">
         <ngb-carousel class="w-100" [interval]="3000" [pauseOnHover]="pauseOnHover" [pauseOnFocus]="pauseOnFocus">
             <ng-template ngbSlide *ngFor="let img of images; index as i">
@@ -22,7 +22,7 @@
             </ng-template>
         </ngb-carousel>
     </div>
-</div> -->
+</div>
   
   
   
@@ -43,7 +43,24 @@
     </div>
   </div>
 
-
+  <!-- description about DPO -->
+  <h3>Why Choose Direct Private Offers?</h3>
+  <h5>Because businesses need smart innovative capital for sustainable growth.</h5>
+  <div class="row">
+    <div class="col-md-6">
+      <div class="description">
+        <p class="text-success ">
+          Fast Process
+        </p>
+        <p>
+          The Issuer will provide DPO a Form 1 Offering Document.   
+          The Form 1 Offering Document is also provided to EDGAR.  
+          DPO also requires US 15 C211 level disclosure too, this will ensure that US institutional Investors and US Broker Dealers are able to participate in Funding Rounds.
+        </p>
+      </div>
+    </div>
+  </div>
+  <!-- popular issues registered -->
   <h3 class="mt-5 text-danger text-center">Popular Projects</h3>
   <div class="row mt-3">
       <div class="col-md-4 col-sm-6" *ngFor="let item of issues">
@@ -58,6 +75,8 @@
       </div>
     </div>
     <a routerLink="#" class="d-block text-center mt-3 font-20 text-link">View All Projects</a>
+
+
 </div>
   
   
