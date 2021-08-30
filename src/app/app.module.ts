@@ -4,12 +4,12 @@ import { BrowserModule } from '@angular/platform-browser';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
-import { DashboardComponent } from './pages/issuer/dashboard/dashboard.component';
+import { DatetimeComponent } from './widgets/datetime/datetime.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    DashboardComponent
+    DatetimeComponent
   ],
   imports: [
     BrowserModule,

@@ -8,7 +8,6 @@ import { LayoutRoutingModule } from './layout-routing.module';
 import { ContactComponent } from './contact/contact.component';
 import { AboutComponent } from './about/about.component';
 import { NgbCarouselModule } from '@ng-bootstrap/ng-bootstrap';
-
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 
 
@@ -17,7 +16,9 @@ import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
     OnboardingComponent, 
     HeaderComponent, 
     FooterComponent, 
-    LayoutComponent, ContactComponent, AboutComponent
+    LayoutComponent, 
+    ContactComponent, 
+    AboutComponent
   ],
   imports: [
     CommonModule,

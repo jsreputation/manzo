@@ -1,12 +1,13 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-
-
+import { IssuerComponent } from './issuer.component';
+import { IssuerRoutingModule } from './issuer-routing.module';
 
 @NgModule({
-  declarations: [],
+  declarations: [IssuerComponent],
   imports: [
-    CommonModule
+    CommonModule,
+    IssuerRoutingModule
   ]
 })
 export class IssuerModule { }

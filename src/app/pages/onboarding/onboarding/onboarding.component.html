@@ -32,7 +32,7 @@
     
   <div class="row mt-5">
     <div class="col-md-4" *ngFor="let item of actions">
-      <div class="action card text-center pt-5 pb-5" [class]="item.background">
+      <div class="action card text-center pt-5 pb-5" [class]="item.background" (click)="navigateToConfigStO(item.route)">
         <fa-icon [icon]="item.icon" class="m-icon m-auto text-light font-70"></fa-icon>
         <div class="card-body text-light">
           <h3 class="card-title">{{ item.name }}</h3>
@@ -47,17 +47,18 @@
   <h3>Why Choose Direct Private Offers?</h3>
   <h5>Because businesses need smart innovative capital for sustainable growth.</h5>
   <div class="row">
-    <div class="col-md-6">
-      <div class="description">
+    <div class="col-md-6" >
+      <div class="description" *ngFor="let item of chooseDes">
         <p class="text-success ">
-          Fast Process
+          {{ item.title }}
         </p>
         <p>
-          The Issuer will provide DPO a Form 1 Offering Document.   
-          The Form 1 Offering Document is also provided to EDGAR.  
-          DPO also requires US 15 C211 level disclosure too, this will ensure that US institutional Investors and US Broker Dealers are able to participate in Funding Rounds.
+          {{ item.description }}
         </p>
       </div>
+    </div>
+    <div class="col-md-6">
+      <img src="../../../../assets/images/c89a7cc1932417a97972dac5bbc4148d75edd587.jpg" alt="">
     </div>
   </div>
   <!-- popular issues registered -->

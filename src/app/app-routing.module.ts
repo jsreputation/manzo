@@ -3,7 +3,7 @@ import { RouterModule, Routes, RoutesRecognized } from '@angular/router';
 
 const routes: Routes = [
   {
-    path: 'home',
+    path: '',
     loadChildren: () => import('./pages/onboarding/layout.module').then(m => m.LayoutModule)
   },
   {
@@ -12,11 +12,11 @@ const routes: Routes = [
   },
   {
     path: '',
-    redirectTo: 'home',
+    redirectTo: '',
     pathMatch: 'full'
   },
   {
-    path: '**', redirectTo: 'home', pathMatch: 'full'
+    path: '**', redirectTo: '', pathMatch: 'full'
   }
 ];
 
