@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 
 @Component({
-  selector: 'app-datetime',
+  selector: 'manzo-datetime',
   templateUrl: './datetime.component.html',
   styleUrls: ['./datetime.component.scss']
 })
