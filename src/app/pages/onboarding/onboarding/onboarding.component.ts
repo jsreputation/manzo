@@ -1,7 +1,8 @@
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
-import { faPaperPlane, faLightbulb, faGem } from '@fortawesome/free-solid-svg-icons';
+
 import { choosewhy } from '../../../constants/choosewhy'
+import { actions } from 'src/app/constants/onboardactions';
 
 @Component({
   selector: 'app-onboarding',
@@ -10,6 +11,8 @@ import { choosewhy } from '../../../constants/choosewhy'
 })
 export class OnboardingComponent implements OnInit {
   chooseDes = choosewhy;
+  actions = actions;
+  
   images = [1, 2, 3].map((n) => `https://picsum.photos/300/100.webp?grayscale&random=${n}`);
 
   pauseOnHover = true;
@@ -30,29 +33,7 @@ export class OnboardingComponent implements OnInit {
     }
   ];
 
-  actions = [
-    {
-      icon: faLightbulb,
-      name: 'RAISE',
-      description: 'Issuers are able to create a listing and start funding campaigns to raise investment capital from multiple investors.',
-      background: 'bg-primary',
-      route: 'newsto'
-    },
-    {
-      icon: faGem,
-      name: 'INVEST',
-      description: 'Investors are able to browse investment opportunities and easily contact Issuers;  and securely participate in a funding round.',
-      background: 'bg-info',
-      route: 'invest'
-    },
-    {
-      icon: faPaperPlane,
-      name: 'MARKET',
-      description: 'Companies listed on DPO may be promising start-up companies, to established revenue producing going concern businesses.',
-      background: 'bg-warning',
-      route: 'market'
-    }
-  ]
+  
 
   constructor(
     private router: Router

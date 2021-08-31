@@ -1,0 +1,13 @@
+<div class="form-group">
+    <label for="" class="font-20 text-success">{{ settings.label }}</label>
+    <div class="input-group">
+        <div class="input-group-prepend">
+            <span class="input-group-text" id="basic-addon1">{{ settings.prefix }}</span>
+        </div>
+        <input type="text" class="form-control" 
+            [placeholder]="settings.placeholder" aria-describedby="basic-addon1">
+        <div class="input-group-append">
+            <span class="input-group-text">{{ settings.suffix }}</span>
+        </div>
+    </div>
+</div>

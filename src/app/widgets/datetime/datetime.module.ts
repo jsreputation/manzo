@@ -2,8 +2,7 @@ import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { DatetimeComponent } from './datetime.component';
 
-// import { OwlDateTimeModule, OwlNativeDateTimeModule } from 'ng-pick-datetime';
-
+import { NgbDatepickerModule } from '@ng-bootstrap/ng-bootstrap'
 
 @NgModule({
   declarations: [
@@ -11,8 +10,7 @@ import { DatetimeComponent } from './datetime.component';
   ],
   imports: [
     CommonModule,
-    // OwlDateTimeModule, 
-    // OwlNativeDateTimeModule,
+    NgbDatepickerModule
   ],
   exports: [
     DatetimeComponent

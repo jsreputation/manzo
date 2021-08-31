@@ -29,27 +29,15 @@
 <!-- popular issues -->
 <div class="container">
   <!-- options to invest or issue -->
-    
-  <div class="row mt-5">
-    <div class="col-md-4" *ngFor="let item of actions">
-      <div class="action card text-center pt-5 pb-5" [class]="item.background" (click)="navigateToConfigStO(item.route)">
-        <fa-icon [icon]="item.icon" class="m-icon m-auto text-light font-70"></fa-icon>
-        <div class="card-body text-light">
-          <h3 class="card-title">{{ item.name }}</h3>
-          <p class="card-text font-18">{{ item.description }}</p>
-          <!-- <a href="#" class="btn btn-danger">{{ item.btnLable }}</a> -->
-        </div>
-      </div>
-    </div>
-  </div>
+  <manzo-card [actionItems]="actions" (handleClick)="navigateToConfigStO($event)"></manzo-card>
 
   <!-- description about DPO -->
-  <h3>Why Choose Direct Private Offers?</h3>
-  <h5>Because businesses need smart innovative capital for sustainable growth.</h5>
-  <div class="row">
-    <div class="col-md-6" >
+  <h3 class="text-danger text-center mt-5 font-weight-bold font-24">Why Choose Direct Private Offers?</h3>
+  <h5 class="text-center">Because businesses need smart innovative capital for sustainable growth.</h5>
+  <div class="row mt-3">
+    <div class="col-md-6 justify-content-between d-flex flex-column">
       <div class="description" *ngFor="let item of chooseDes">
-        <p class="text-success ">
+        <p class="text-success font-weight-bold">
           {{ item.title }}
         </p>
         <p>

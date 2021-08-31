@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { configInputs } from 'src/app/constants/configSto';
 
 @Component({
   selector: 'app-config-sto',
@@ -6,10 +7,12 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./config-sto.component.scss']
 })
 export class ConfigSTOComponent implements OnInit {
-
-  constructor() { }
+  configInputs = configInputs;
+  constructor() {
+  }
 
   ngOnInit(): void {
+    
   }
 
 }
