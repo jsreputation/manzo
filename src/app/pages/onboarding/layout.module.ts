@@ -3,7 +3,6 @@ import { CommonModule } from '@angular/common';
 
 import { OnboardingComponent } from './onboarding/onboarding.component';
 import { LayoutRoutingModule } from './layout-routing.module';
-// import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 
 import { HeaderComponent } from './header/header.component';
 import { FooterComponent } from './footer/footer.component';
@@ -12,10 +11,6 @@ import { ContactComponent } from './contact/contact.component';
 import { AboutComponent } from './about/about.component';
 
 import { CardModule } from 'src/app/widgets/card/card.module';
-
-
-
-
 
 @NgModule({
   declarations: [
@@ -29,7 +24,6 @@ import { CardModule } from 'src/app/widgets/card/card.module';
   imports: [
     CommonModule,
     LayoutRoutingModule,
-    // FontAwesomeModule,
     CardModule
   ],
 })

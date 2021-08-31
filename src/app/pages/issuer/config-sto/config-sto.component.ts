@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { configInputs } from 'src/app/constants/configSto';
-
+import { faSave } from '@fortawesome/free-solid-svg-icons';
 @Component({
   selector: 'app-config-sto',
   templateUrl: './config-sto.component.html',
@@ -8,11 +8,16 @@ import { configInputs } from 'src/app/constants/configSto';
 })
 export class ConfigSTOComponent implements OnInit {
   configInputs = configInputs;
+  saveIcon = faSave;
   constructor() {
   }
 
   ngOnInit(): void {
     
+  }
+
+  createSTO(e: any) {
+    e.preventDefault();
   }
 
 }

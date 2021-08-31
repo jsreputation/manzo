@@ -39,34 +39,12 @@
             </table>
         </div>
         
-        <manzo-both-input *ngFor="let item of configInputs" [settings]="item"></manzo-both-input>
-
-        <!-- <div class="form-group">
-            <label for="" class="font-20 text-success">Non-accredited Limit USD</label>
-            <div class="input-group">
-                <div class="input-group-prepend">
-                    <span class="input-group-text" id="basic-addon1">$</span>
-                </div>
-                <input type="text" class="form-control" 
-                    placeholder="Non-accredited Limit USD " aria-label="Username" aria-describedby="basic-addon1">
-                <div class="input-group-append">
-                    <span class="input-group-text">.00</span>
-                </div>
-            </div>
+        <div class="form-group" *ngFor="let item of configInputs" >
+            <manzo-both-input [settings]="item" *ngIf="item.type == 'both'"></manzo-both-input>
+            <manzo-checkbox [settings]="item" *ngIf="item.type == 'checkbox'"></manzo-checkbox>
+            <manzo-normal-input [settings]="item" *ngIf="item.type == 'normal'"></manzo-normal-input>
         </div>
-
-        <div class="form-group">
-            <label for="" class="font-20 text-success">Non-accredited Limit USD</label>
-            <div class="input-group">
-                <div class="input-group-prepend">
-                    <span class="input-group-text" id="basic-addon1">$</span>
-                </div>
-                <input type="text" class="form-control" 
-                    placeholder="Non-accredited Limit USD " aria-label="Username" aria-describedby="basic-addon1">
-                <div class="input-group-append">
-                    <span class="input-group-text">.00</span>
-                </div>
-            </div>
-        </div> -->
+        
+        <manzo-button (click)="createSTO($event)" label="Create Security Token" [icon]="saveIcon" class="mt-4 mb-3 d-block text-center"></manzo-button>
     </form>
 </div>

@@ -5,7 +5,7 @@ import { Component, OnInit } from '@angular/core';
   template: `
       <manzo-header></manzo-header>
       <router-outlet></router-outlet>
-      <manzo-footer></manzo-footer>
+      <!-- <manzo-footer></manzo-footer> -->
   `
 })
 export class LayoutComponent implements OnInit {

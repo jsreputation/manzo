@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import {NgbDate, NgbCalendar, NgbDateParserFormatter} from '@ng-bootstrap/ng-bootstrap';
+import { faCalendarAlt } from '@fortawesome/free-solid-svg-icons';
 @Component({
   selector: 'manzo-datetime',
   templateUrl: './datetime.component.html',
@@ -8,9 +9,10 @@ import {NgbDate, NgbCalendar, NgbDateParserFormatter} from '@ng-bootstrap/ng-boo
 export class DatetimeComponent implements OnInit {
 
   hoveredDate: NgbDate | null = null;
-
   fromDate: NgbDate | null;
   toDate: NgbDate | null;
+
+  icon = faCalendarAlt;
 
   constructor(
     private calendar: NgbCalendar, 
