@@ -1,1 +1,21 @@
-<p>signup works!</p>
+<div class="container h-100 d-flex align-items-center">
+    <div class="row w-100 mt-5">
+        <div class="col-12 col-md-6 col-lg-5 mx-auto">
+            <h1 class="text-center mb-5 text-danger font-weight-bold">Request Invitation</h1>
+            <form class="w-100" [formGroup]="form" (ngSubmit)="sendRequest()">
+                <div class="form-group">
+                    <label class="font-20 text-success" for="">Email</label>
+                    <div class="input-group mb-3">
+                        <div class="input-group-prepend">
+                            <span class="input-group-text" id="basic-addon1">
+                                <fa-icon [icon]="icons.email" class="m-icon m-auto text-success"></fa-icon>
+                            </span>
+                        </div>
+                        <input class="form-control" type="text" formControlName="email" placeholder="Email Address">
+                    </div>
+                </div>
+                <manzo-button label="Send Request" class="d-block text-center mt-5"></manzo-button>
+            </form>
+        </div>
+    </div>
+</div>

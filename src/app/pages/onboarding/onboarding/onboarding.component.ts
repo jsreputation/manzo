@@ -1,8 +1,8 @@
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
 
-import { choosewhy } from '../../../constants/choosewhy'
-import { actions } from 'src/app/constants/onboardactions';
+import { choosewhy } from '../../../core/constants/choosewhy'
+import { actions } from 'src/app/core/constants/onboardactions';
 
 @Component({
   selector: 'app-onboarding',

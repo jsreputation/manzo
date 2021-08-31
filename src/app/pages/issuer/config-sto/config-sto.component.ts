@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { configInputs } from 'src/app/constants/configSto';
+import { configInputs } from 'src/app/core/constants/configSto';
 import { faSave } from '@fortawesome/free-solid-svg-icons';
 @Component({
   selector: 'app-config-sto',

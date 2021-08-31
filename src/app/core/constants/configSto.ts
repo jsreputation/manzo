@@ -38,12 +38,14 @@ export const configInputs = [
     {
         type: 'normal',
         label: 'Fund wallet',
-        placeholder: 'Fund Wallet Address'
+        placeholder: 'Fund Wallet Address',
+        kind: 'text'
     },
     {
         type: 'normal',
         label: 'Treasury wallet',
-        placeholder: 'Treasury wallet Address'
+        placeholder: 'Treasury wallet Address',
+        kind: 'text'
     }
     // {
     //     type: 'checkbox',

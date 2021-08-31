@@ -7,16 +7,11 @@ const routes: Routes = [
     loadChildren: () => import('./pages/onboarding/layout.module').then(m => m.LayoutModule)
   },
   {
-    path: 'auth',
+    path: '',
     loadChildren: () => import('./pages/auth/auth.module').then(m => m.AuthModule)
   },
   {
-    path: '',
-    redirectTo: '',
-    pathMatch: 'full'
-  },
-  {
-    path: '**', redirectTo: '', pathMatch: 'full'
+    path: '**', redirectTo: 'home'
   }
 ];
 

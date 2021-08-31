@@ -1,1 +1,36 @@
-<p>signin works!</p>
+<div class="container h-100 d-flex align-items-center">
+    <div class="row w-100 mt-5">
+        <div class="col-12 col-md-6 col-lg-5 mx-auto">
+            <h1 class="text-center mb-5 text-danger font-weight-bold">Sign In</h1>
+            <form class="w-100" [formGroup]="signInForm" (ngSubmit)="signIn()">
+                <div class="form-group">
+                    <label class="font-20 text-success" for="">Email</label>
+                    <div class="input-group mb-3">
+                        <div class="input-group-prepend">
+                            <span class="input-group-text" id="basic-addon1">
+                                <fa-icon [icon]="icons.email" class="m-icon m-auto text-success"></fa-icon>
+                            </span>
+                        </div>
+                        <input class="form-control" type="text" formControlName="email" placeholder="Email Address">
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label class="font-20 text-success" for="">Password</label>
+                    <div class="input-group mb-3">
+                        <div class="input-group-prepend">
+                            <span class="input-group-text" id="basic-addon1">
+                                <fa-icon [icon]="icons.password" class="m-icon m-auto text-success"></fa-icon>
+                            </span>
+                        </div>
+                        <input class="form-control" type="text" formControlName="password" placeholder="Email Address">
+                    </div>
+                </div>
+
+                <p class="text-center font-14">Not a member? <a (click)="navigateToSignUp()" class="text-primary">Request Invitation</a></p>
+                <manzo-button label="Sign In" class="d-block text-center"></manzo-button>
+                <a class="font-14 d-block text-center mt-4" (click)="navigateToForgot()">Forgot Password</a>
+            </form>
+        </div>
+    </div>
+</div>
