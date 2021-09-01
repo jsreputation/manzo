@@ -12,6 +12,21 @@ export class SignupComponent implements OnInit {
     email: faEnvelope
   }
 
+  radionSettings = {
+    label: 'Wanna be an ISSUER or an INVESTOR ?',
+    type: 'filter',
+    values: [
+      {
+        id: 'issuer',
+        label: 'Issuer'
+      },
+      {
+        id: 'investor',
+        label: 'Investor'
+      }
+    ]
+  };
+
   isLoading = false;
 
   form: FormGroup = this.fb.group({

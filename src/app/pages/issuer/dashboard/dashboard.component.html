@@ -1,1 +1,40 @@
-<p>dashboard works!</p>
+<div class="container">
+    <!-- <h1 class="text-danger text-center">Issues</h1> -->
+    <div class="row">
+        <div class="col-md-4 col-lg-3">
+            <div class="card">
+                <span class="badge badge-danger">Closed</span>
+                <div class="card-header bg-success text-light font-18 font-weight-bold text-center">
+                    Manzo STO
+                </div>
+                <img src="../../../../assets/images/pexels-thisisengineering-3861969.jpg" alt="">
+                <div class="card-body">
+
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-4 col-lg-3">
+            <div class="card" (click)="editSTO()">
+                <span class="badge badge-primary text-right">Open</span>
+                <div class="card-header bg-success text-light font-18 font-weight-bold text-center">
+                    Elice STO
+                </div>
+                <img src="../../../../assets/images/crypto.jfif" alt="">
+                <div class="card-body">
+
+                    <div class="d-flex align-items-center">
+                        <fa-icon [icon]="clockIcon" class="m-icon mr-3 text-danger font-18"> </fa-icon>
+                        <div class="font-16">
+                            30 days left
+                        </div>   
+                    </div>
+
+                    <div class="progress">
+                        <div class="progress-bar bg-danger" role="progressbar" style="width: 50%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

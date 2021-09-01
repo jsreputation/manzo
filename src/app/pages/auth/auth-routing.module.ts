@@ -27,10 +27,6 @@ const routes: Routes = [
       {
         path: 'resetpassword/:token',
         component: ResetPasswordComponent
-      },
-      {
-        path: 'verifyemail/:token',
-        component: VerifyEmailComponent
       }
     ]
   }

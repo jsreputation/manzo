@@ -11,6 +11,7 @@ import { ForgotPasswordComponent } from './forgot-password/forgot-password.compo
 import { VerifyEmailComponent } from './verify-email/verify-email.component';
 import { ResetPasswordComponent } from './reset-password/reset-password.component';
 import { AcceptRequestComponent } from './accept-request/accept-request.component';
+import { InputsModule } from 'src/app/widgets/inputs/inputs.module';
 
 
 @NgModule({
@@ -29,7 +30,8 @@ import { AcceptRequestComponent } from './accept-request/accept-request.componen
     FontAwesomeModule,
     FormsModule,
     ReactiveFormsModule,
-    ButtonModule
+    ButtonModule,
+    InputsModule
   ]
 })
 export class AuthModule { }
