@@ -5,6 +5,7 @@ import { BothComponent } from './both/both.component';
 import { CheckboxComponent } from './checkbox/checkbox.component';
 import { NormalComponent } from './normal/normal.component';
 import { RadioComponent } from './radio/radio.component';
+import { SwitchComponent } from './switch/switch.component';
 
 
 
@@ -13,7 +14,8 @@ import { RadioComponent } from './radio/radio.component';
     BothComponent,
     CheckboxComponent,
     NormalComponent,
-    RadioComponent
+    RadioComponent,
+    SwitchComponent
   ],
   imports: [
     CommonModule

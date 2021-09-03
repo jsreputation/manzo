@@ -25,7 +25,7 @@ const routes: Routes = [
         component: DashboardComponent
       },
       {
-        path: 'editsto/:id',
+        path: 'editsto/:token',
         component: EditStoComponent
       }
     ]
