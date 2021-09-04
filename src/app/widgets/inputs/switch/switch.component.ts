@@ -1,7 +1,7 @@
 import { Component, Input, OnInit } from '@angular/core';
 
 @Component({
-  selector: 'app-switch',
+  selector: 'manzo-switch',
   templateUrl: './switch.component.html',
   styleUrls: ['./switch.component.scss']
 })
@@ -10,6 +10,10 @@ export class SwitchComponent implements OnInit {
   constructor() { }
 
   ngOnInit(): void {
+  }
+
+  changeValue(e: any) {
+    e.checked = !e.checked;
   }
 
 }

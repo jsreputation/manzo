@@ -1,4 +1,4 @@
-<div class="custom-control custom-switch">
-    <input type="checkbox" class="custom-control-input" [id]="settings.onff">
-    <label class="custom-control-label" [for]="settings.onoff">{{ settings.label }}</label>
+<div class="custom-control custom-switch mb-2">
+    <input type="checkbox" class="custom-control-input" [name]="settings.id" [id]="settings.id" (change)="changeValue(settings)" [checked]="settings.checked">
+    <label class="text-20 custom-control-label" [ngClass]="{'text-success': settings.checked, 'text-danger': !settings.checked}" [for]="settings.id">{{ settings.checked? settings.on:settings.off }}</label>
 </div>

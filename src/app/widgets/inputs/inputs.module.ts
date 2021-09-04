@@ -24,7 +24,8 @@ import { SwitchComponent } from './switch/switch.component';
     BothComponent,
     CheckboxComponent,
     NormalComponent,
-    RadioComponent
+    RadioComponent,
+    SwitchComponent
   ]
 })
 export class InputsModule { }
