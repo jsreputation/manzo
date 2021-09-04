@@ -11,6 +11,7 @@ import { ContactComponent } from './contact/contact.component';
 import { AboutComponent } from './about/about.component';
 
 import { CardModule } from 'src/app/widgets/card/card.module';
+import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 
 @NgModule({
   declarations: [
@@ -24,7 +25,8 @@ import { CardModule } from 'src/app/widgets/card/card.module';
   imports: [
     CommonModule,
     LayoutRoutingModule,
-    CardModule
+    CardModule,
+    FontAwesomeModule
   ],
 })
 export class LayoutModule { }

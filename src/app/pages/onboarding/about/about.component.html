@@ -1,1 +1,28 @@
-<p>about works!</p>
+<div class="container">
+    <div class="row mt-5">
+        <div class="col-md-6">
+            <h1 class="text-success font-weight-bold">About</h1>
+            <p class="font-18">Direct Private Offers is a Funding Portal where investors can invest in great “up and coming” companies.  Our platform attracts a wide range of businesses, from seed and start-up stage companies to more established growth companies, companies that are income-producing and going concerns, and those that may already be reporting companies and/or quoted on OTC Markets.
+                Direct Private Offers helps ventures seeking access to growth capital and provides a convenient forum to connect with potential investors and other stakeholders. 
+            </p>
+            <button class="btn btn-danger mt-4 d-block m-auto">How it works</button>
+        </div>
+        <div class="col-md-6">
+            <img src="../../../../assets/images/about.jpg" alt="">
+        </div>
+    </div>
+
+    <div class="mt-5">
+        <ng-container *ngFor="let item of abouts">
+            <div [ngClass]="item.bg" class="row p-3">
+                <div class="col-md-2 d-flex justify-content-center align-items-center">
+                    <fa-icon [icon]="item.icon" class="m-icon m-auto text-light font-70"></fa-icon>
+                </div>
+                <div class="col-md-10">
+                    <h2 class="text-light">{{ item.title }}</h2>
+                    <p class="text-light">{{ item.description }}</p>
+                </div>
+            </div>
+        </ng-container>
+    </div>
+</div>
