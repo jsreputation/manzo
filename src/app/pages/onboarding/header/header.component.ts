@@ -11,14 +11,22 @@ export class HeaderComponent implements OnInit {
       name: 'Home',
       route: '/home'
     },
-    {
-      name: 'Contact Us',
-      route: '/contact'
-    },
+    // {
+    //   name: 'Contact Us',
+    //   route: '/contact'
+    // },
     {
       name: 'About Us',
       route: '/about'
     },
+    {
+      name: 'Sign In',
+      route: 'signin'
+    },
+    {
+      name: 'Sign Up',
+      route: 'request'
+    }
 
   ]
   constructor() { }

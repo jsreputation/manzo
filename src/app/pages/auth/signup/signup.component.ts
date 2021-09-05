@@ -18,7 +18,8 @@ export class SignupComponent implements OnInit {
     values: [
       {
         id: 'issuer',
-        label: 'Issuer'
+        label: 'Issuer',
+        checked: true
       },
       {
         id: 'investor',
