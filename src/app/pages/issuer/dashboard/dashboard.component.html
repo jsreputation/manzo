@@ -5,7 +5,7 @@
             <div class="list-group" id="list-tab" role="tablist">
                 <ng-container *ngFor="let item of menu">
                     <a class="list-group-item list-group-item-action" id="list-home-list" data-toggle="list"  role="tab" aria-controls="home"
-                        [routerLink]="item.route"
+                        [routerLink]="item.route" routerLinkActive="active"
                     >
                     <fa-icon [icon]="item.icon" class="m-icon mr-3 text-success font-18"></fa-icon>
                         {{item.title}}

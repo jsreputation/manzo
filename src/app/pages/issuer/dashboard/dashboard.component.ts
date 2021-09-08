@@ -16,22 +16,22 @@ export class DashboardComponent implements OnInit {
   menu = [
     {
       title: 'Your STO',
-      route: '',
+      route: './',
       icon: faBook
     },
     {
       title: 'All STO',
-      route: '',
+      route: 'asdf',
       icon: faCashRegister
     },
     {
       title: 'Your Investors',
-      route: '',
+      route: 'asdfasdf',
       icon: faUser
     },
     {
       title: 'All Investors',
-      route: '',
+      route: 'asdfasdf',
       icon: faUsers
     }
   ]
