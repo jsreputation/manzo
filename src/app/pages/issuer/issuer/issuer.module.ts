@@ -9,7 +9,6 @@ import { ButtonModule } from 'src/app/widgets/button/button.module';
 
 import { ConfigSTOComponent } from '../config-sto/config-sto.component';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
-import { DashboardComponent } from '../dashboard/dashboard.component';
 import { EditStoComponent } from '../edit-sto/edit-sto.component';
 
 
@@ -17,7 +16,6 @@ import { EditStoComponent } from '../edit-sto/edit-sto.component';
   declarations: [
     IssuerComponent, 
     ConfigSTOComponent,
-    DashboardComponent,
     EditStoComponent
   ],
   imports: [

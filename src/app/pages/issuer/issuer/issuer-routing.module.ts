@@ -1,7 +1,6 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { ConfigSTOComponent } from '../config-sto/config-sto.component';
-import { DashboardComponent } from '../dashboard/dashboard.component';
 import { EditStoComponent } from '../edit-sto/edit-sto.component';
 import { InvestorsComponent } from '../dashboard/investors/investors.component';
 import { IssuerComponent } from './issuer.component';
