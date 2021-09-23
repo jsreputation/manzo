@@ -4,8 +4,6 @@ import { DashboardComponent } from './dashboard.component';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import { DashboardRoutingModule } from './dashboard-routing.module';
 
-
-
 @NgModule({
   declarations: [ DashboardComponent ],
   imports: [
