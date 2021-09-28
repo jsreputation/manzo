@@ -1,19 +1,35 @@
-<div class="container">
+<div class="row">
     <h1 class="text-success">Investors</h1>
-    <table class="table">
-        <thead class="">
-            <tr>
-                <th>No</th>
-                <th>Name</th>
-                <th>Email</th>
-                <th>Phone Number</th>
-            </tr>
-        </thead>
-        <tbody>
-            <tr>
-                <td>1</td>
-                <td>Alice Brown</td>
-            </tr>
-        </tbody>
-    </table>
+    <div class="col-12">
+
+        <table class="table">
+            <thead class="thead-dark text-center">
+                <tr>
+                    <th>No</th>
+                    <th>Name</th>
+                    <th>Address</th>
+                    <th>CanSendAfter</th>
+                    <th>CanReceiveAfter</th>
+                    <th>ExpiryTime</th>
+                    <th>Added</th>
+                </tr>
+            </thead>
+            <tbody class="text-center">
+                <tr>
+                    <td>1</td>
+                    <td>Alice Brown</td>
+                    <td>0x92628C812d14b1e809c0a10b429ae1A65c0c58b0</td>
+                    <td>
+                        <fa-icon [icon]="icons.checked" class="m-icon mr-3 text-success font-18"> </fa-icon>
+                    </td>
+                    <td>
+                        <fa-icon [icon]="icons.unchecked" class="m-icon mr-3 text-danger font-18"> </fa-icon>
+                    </td>
+                    <td>
+                        
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
 </div>

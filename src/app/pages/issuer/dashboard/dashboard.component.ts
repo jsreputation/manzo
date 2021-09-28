@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { faClock, faBook, faCashRegister, faUser, faUsers } from '@fortawesome/free-solid-svg-icons';
+import {  faBook, faUser, faCogs } from '@fortawesome/free-solid-svg-icons';
 
 
 @Component({
@@ -14,24 +14,19 @@ export class DashboardComponent implements OnInit {
 
   menu = [
     {
-      title: 'Your STO',
-      route: './stoyours',
+      title: 'Issues',
+      route: './issues',
       icon: faBook
     },
     {
-      title: 'All STO',
-      route: './stoall',
-      icon: faCashRegister
-    },
-    {
-      title: 'Your Investors',
-      route: './investorsyours',
+      title: 'Investors',
+      route: './investors',
       icon: faUser
     },
     {
-      title: 'All Investors',
-      route: './investorsall',
-      icon: faUsers
+      title: 'Settings',
+      route: './settings',
+      icon: faCogs
     }
   ]
 

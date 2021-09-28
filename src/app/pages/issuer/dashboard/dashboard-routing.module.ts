@@ -11,24 +11,20 @@ const routes: Routes = [
     component: DashboardComponent,
     children: [
         {
-            path: 'stoall',
-            component: IssuesComponent
-        },
-        {
-            path: 'investorsyours',
+            path: 'investors',
             component: InvestorsComponent
         },
         {
-            path: 'investorsall',
-            component: InvestorsComponent
-        },
-        {
-            path: 'stoyours',
+            path: 'issues',
             component: IssuesComponent
         },
+        {
+          path: 'settings',
+          component: InvestorsComponent
+         },
         {
             path: '',
-            redirectTo: 'stoyours'
+            redirectTo: 'issues'
         }
     ]
   },

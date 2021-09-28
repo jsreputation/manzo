@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import {  faCheck, faTimes } from '@fortawesome/free-solid-svg-icons';
 
 @Component({
   selector: 'app-investors',
@@ -6,7 +7,10 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./investors.component.scss']
 })
 export class InvestorsComponent implements OnInit {
-
+  icons = {
+    checked: faCheck,
+    unchecked: faTimes
+  }
   constructor() { }
 
   ngOnInit(): void {
